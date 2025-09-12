@@ -8,6 +8,41 @@
 </head>
 <body>
 
+
+
+
+ <!-- SEARCH ////////////////////////////////////////////////////////////////// -->
+ <input type="text" id="searchInput" placeholder="search…" autofocus>
+ <script>
+  document.getElementById('searchInput').addEventListener('keypress', function(event) {
+   if (event.key === 'Enter') {
+    const query = this.value.trim();
+    if (query) {
+     const googleUrl = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+     window.open(googleUrl, '_blank');
+    }
+   }
+  });
+ </script>
+ <style>
+  #searchInput{
+   margin: 2rem;
+   width: 20rem;
+   font-size: 1.2rem;
+   padding: 0.5em;
+   opacity: 0.3;
+  }
+ </style>
+ <!-- END SEARCH /////////////////////// -->
+
+
+
+
+
+
+
+
+
     <div id="Card">
     <h1 id ="Strategy">hello</h1>
 </div>
