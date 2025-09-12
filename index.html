@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="Card">
+    <h1 id ="Strategy">hello</h1>
+</div>
+<button onclick="window.location.reload();">⌘R</button>
+    <script>
+    var strategy = document.getElementById("Strategy");
+
+const Strategies = [
+    "chaton",
+    "loutre",
+    "coincoin"
+    "step by step, day by day",
+    "focus on yourself",
+    "Breathe more deeply",
+    "Go to an extreme, move back to a more comfortable place",s
+];
+
+let total = Strategies.length;
+let rando = Math.random();
+let hasar = rando * total;
+let choix = Math.floor( hasar );
+
+strategy.innerHTML = Strategies[ choix ];
+
+
+    </script>
+
+
+</body>
+</html>
