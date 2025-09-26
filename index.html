@@ -44,8 +44,51 @@
 
 
     <div id="Card">
-    <h1 id ="Strategy">hello</h1>
-</div>
+        <h1 id="Strategy">hello</h1>
+    </div>
+
+    <script>
+    var strategy = document.getElementById("Strategy");
+
+    const Strategies = [
+        "Step by step, day by day.",
+        "Focus on yourself.",
+        "Breathe more deeply.",
+        "Collect moments like seaahells 🐚",
+        "Fais le.",
+        "Demain, tu regretteras de ne pas avoir commencé aujourd'hui.",
+        "Fais le pour la futur toi.",
+        "Choose to be happy.",
+        "Happiness is a moment, positivity is a mindset.",
+        "+=+",
+        "Si tu veux, tu peux.",
+        "Focalise-toi sur le progrès, pas la perfection.",
+    ];
+
+    let total = Strategies.length;
+    let rando = Math.random();
+    let hasar = rando * total;
+    let choix = Math.floor( hasar );
+
+    strategy.innerHTML = Strategies[ choix ];
+
+</script>
+
+
+
+
+
+
+
+<button onclick="window.location.reload();">♥︎☃︎☀︎</button>
+
+
+
+
+
+
+
+
 
 <img id="bkgImg">
 
@@ -57,7 +100,7 @@
   z-index: -1;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
  }
 </style>
 
@@ -83,40 +126,7 @@
 
 
 
-<button onclick="window.location.reload();">⌘R</button>
-    <script>
-    var strategy = document.getElementById("Strategy");
 
-const Strategies = [
-    "Step by step, day by day.",
-    "Focus on yourself.",
-    "Breathe more deeply.",
-    "Collect moments like seaahells 🐚",
-    "Fais le.",
-    "Demain, tu regretteras de ne pas avoir commencé aujourd'hui.",
-    "Fais le pour la futur toi.",
-    "Choose to be happy.",
-    "Happiness is a moment, positivity is a mindset.",
-    "+=+",
-    "Si tu veux, tu peux.",
-    "Focalise-toi sur le progrès, pas la perfection.",
-];
 
-let total = Strategies.length;
-let rando = Math.random();
-let hasar = rando * total;
-let choix = Math.floor( hasar );
-
-strategy.innerHTML = Strategies[ choix ];
-//let mesImages = [
-    "image.moi.web.jpg",
-    "image.ibiza.web.jpg"];
-//let imagesTotal = mesImages.lenght;
-//let imagesRando = Math.random();
-//let imagesHasar = imagesRando * imagestotal;
-//let imagesChoix = Math.floor(imagesHasar);
-//theImage.src = mesImages[choix];
-
-</script>
 </body>
 </html>
