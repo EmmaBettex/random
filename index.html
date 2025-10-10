@@ -19,7 +19,7 @@
     const query = this.value.trim();
     if (query) {
      const googleUrl = 'https://www.google.com/search?q=' + encodeURIComponent(query);
-     window.open(googleUrl, '_blank');
+     window.open(googleUrl, '_self');
     }
    }
   });
@@ -63,7 +63,7 @@
         "+=+",
         "Si tu veux, tu peux.",
         "Focalise-toi sur le progrès, pas la perfection.",
-        "Le silence n'efface pas les idées",
+        "Le silence n'efface pas les idées"
     ];
 
     let total = Strategies.length;
